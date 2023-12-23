@@ -99,7 +99,11 @@ def plot_curves(
 
 
 def plot_results(
-    dirs: List[str], num_timesteps: Optional[int], x_axis: str, task_name: str, figsize: Tuple[int, int] = (8, 2)
+        dirs: List[str],
+        x_axis: str = 'episodes',
+        task_name: Optional[str] = None,
+        num_timesteps: Optional[int] = None,
+        figsize: Tuple[int, int] = (8, 2)
 ) -> None:
     """
     Plot the results using csv files from ``Monitor`` wrapper.
